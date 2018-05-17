@@ -1,0 +1,56 @@
+<html>
+<head>
+      <title>Form Registrasi Pembelian</title>
+      <script src='javascript_tabel.js'></script>
+</head>
+<body>
+<table border="1">
+<form name='biodata' method='post' action='tutor.html'>
+<h1 style="text-align:center">Form Registrasi Pembelian</h1>
+<pre>
+Nama     : <input type='text' name='nama'>
+Alamat    : <textarea style="width:"40px";height:"230px" cols="25"name="alamat" id="alamat"></textarea>
+Tanggal Lahir   : <input type='text' name='tgl'> Tanggal
+	  <select name='bulan'>
+      <option>Bulan
+      <option>Januari
+      <option>Februari
+      <option>Maret             
+      <option>April
+	  <option>Mei
+      <option>Juni
+      <option>Juli
+      <option>Agustus            
+      <option>September
+	  <option>Oktober
+      <option>November
+      <option>Desember
+      </select>
+	  <input type='text' name='tahun'> Tahun
+Agama   : <select name='agama'>
+      <option>Islam
+      <option>Hindu
+      <option>Budha
+      <option>Kristen             
+      <option>Konghucu       
+      </select>
+No Telp     : <input type='text' name='telp'>
+Email     : <input type='text' name='email'>	  
+</pre>
+      <input type='button' onClick='terimainput()' value='Simpan'>
+      <input type='reset' value='Ulangi'>
+
+</form>
+</table>
+<table border='1' id='tabelinput'>
+<tr>
+      <td>NAMA</td>
+      <td>ALAMAT</td>
+	  <td>TANGGAL LAHIR</td>
+      <td>AGAMA</td>
+	  <td>NO TELP</td>
+	  <td>EMAIL</td>
+</tr>
+</table>
+</body>
+</html>

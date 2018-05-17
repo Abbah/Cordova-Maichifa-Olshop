@@ -1,0 +1,182 @@
+<html> 
+<head> 
+<title>Kalkulator Sederhana SYIFA OLSHOP</title> 
+<style type="text/css"> 
+/*code css*/
+#tbl{ 
+    background:#CCC -moz-linear-gradient(top,#FC9,#F60); 
+    -moz-box-shadow:2px 2px 15px; #000; 
+    margin-top:20px; 
+} 
+.btn{ 
+    background-color:#000; 
+    width:50px; 
+    height:30px; 
+    font-size:5mm; 
+    font-family:tahoma; 
+    display:block; 
+    color:#FFF; 
+    text-decoration:none; 
+    border-style:outset; 
+} 
+.btn:hover{ 
+    border-style: inset; 
+    background-color:#666; 
+} 
+.tmpl{ 
+    width:240px; 
+    height:30px; 
+    font-size:5mm; 
+    font-family:tahoma; 
+    border-style: inset; 
+    -moz-border-radius:10px 0px 10px 0px; 
+} 
+</style> 
+<script language="javascript"> 
+var angka=""; 
+var bil1,bil2,ttl; 
+var op,pil; 
+function nol(){ 
+    angka = angka+"0"; 
+    document.form1.hsl.value = angka; 
+} 
+function satu(){ 
+    angka = angka+"1"; 
+    document.form1.hsl.value = angka; 
+} 
+function dua(){ 
+    angka = angka+"2"; 
+    document.form1.hsl.value = angka; 
+     
+} 
+function tiga(){ 
+    angka = angka+"3"; 
+    document.form1.hsl.value = angka; 
+     
+} 
+function empat(){ 
+    angka = angka+"4"; 
+    document.form1.hsl.value = angka; 
+     
+} 
+function lima(){ 
+    angka = angka+"5"; 
+    document.form1.hsl.value = angka; 
+     
+} 
+function enam(){ 
+    angka = angka+"6"; 
+    document.form1.hsl.value = angka; 
+} 
+function tujuh(){ 
+    angka = angka+"7"; 
+    document.form1.hsl.value = angka; 
+} 
+function delapan(){ 
+    angka = angka+"8"; 
+    document.form1.hsl.value = angka; 
+} 
+function sembilan(){ 
+    angka = angka+"9"; 
+    document.form1.hsl.value = angka; 
+} 
+function hps(){ 
+    angka =""; 
+    document.form1.hsl.value = angka; 
+} 
+function tambah(){ 
+    bil1 = angka; 
+    op   = "+"; 
+    document.form1.hsl.value = op; 
+    angka = ""; 
+    pil  = 1; 
+} 
+function krg(){ 
+    bil1 = angka; 
+    op   = "-"; 
+    document.form1.hsl.value = op; 
+    angka = ""; 
+    pil  = 2; 
+} 
+function kali(){ 
+    bil1 = angka; 
+    op   = "x"; 
+    document.form1.hsl.value = op; 
+    angka = ""; 
+    pil  = 3; 
+} 
+function bagi(){ 
+    bil1 = angka; 
+    op   = "/"; 
+    document.form1.hsl.value = op; 
+    angka = ""; 
+    pil  = 4; 
+} 
+function sama_dengan(){ 
+    if(pil==1){ 
+        bil2 = angka 
+        ttl  = parseFloat(bil1)+parseFloat(bil2); 
+        angka= parseFloat(ttl); 
+        document.form1.hsl.value = angka; 
+    } 
+    else if(pil==2){ 
+        bil2 = angka 
+        ttl  = parseFloat(bil1)-parseFloat(bil2); 
+        angka= parseFloat(ttl); 
+        document.form1.hsl.value = angka; 
+    } 
+    else if(pil==3){ 
+        bil2 = angka 
+        ttl  = parseFloat(bil1)*parseFloat(bil2); 
+        angka= parseFloat(ttl); 
+        document.form1.hsl.value = angka; 
+    } 
+    else if(pil==4){ 
+        bil2 = angka 
+        ttl  = parseFloat(bil1)/parseFloat(bil2); 
+        angka= parseFloat(ttl); 
+        document.form1.hsl.value = angka; 
+    } 
+} 
+</script> 
+</head> 
+<body bgcolor="#FFFFCC"> 
+<p><h1 align="center">KALKULATOR SEDERHANA SYIFA OLSHOP</h1></p><hr size="10" noshade="noshade"/> 
+<form name="form1"> 
+<table align="center" cellpadding="2" cellspacing="2" id="tbl"> 
+  <tr> 
+    <td height="60" colspan="4" valign="middle"><input name="hsl" type="text" class="tmpl" id="hsl" /></td> 
+  </tr> 
+  <tr align="center"> 
+    <td><a href="javascript:tujuh();" class="btn">7</a></td> 
+    <td><a href="javascript:delapan();" class="btn">8</a></td> 
+    <td><a href="javascript:sembilan();" class="btn">9</a></td> 
+    <td><a href="javascript:hps();" class="btn">C</a></td> 
+    </tr> 
+  <tr align="center"> 
+    <td><a href="javascript:empat();" class="btn">4</a></td> 
+    <td><a href="javascript:lima();" class="btn">5</a></td> 
+    <td><a href="javascript:enam();" class="btn">6</a></td> 
+    <td><a href="javascript:bagi();" class="btn">/</a></td> 
+    </tr> 
+  <tr align="center"> 
+    <td><a href="javascript:satu();" class="btn">1</a></td> 
+    <td><a href="javascript:dua();" class="btn">2</a></td> 
+    <td><a href="javascript:tiga();" class="btn">3</a></td> 
+    <td><a href="javascript:kali();" class="btn">x</a></td> 
+    </tr> 
+  <tr align="center"> 
+    <td><a href="javascript:nol();" class="btn">0</a></td> 
+    <td><a href="javascript:sama_dengan();" class="btn">=</a></td> 
+    <td><a href="javascript:tambah();" class="btn">+</a></td> 
+    <td><a href="javascript:krg();" class="btn">-</a></td> 
+    </tr> 
+  <tr align="center"> 
+    <td colspan="4">&nbsp;</td> 
+    </tr> 
+</table> 
+</form> 
+<p>&nbsp;</p> 
+<hr size="10" noshade="noshade"/> 
+</body> 
+</html>

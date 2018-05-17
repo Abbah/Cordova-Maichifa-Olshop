@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Aplikasi Pendaftaran Online</title>
+</head>
+<body>
+<main>
+	<!--Membuat Kollom Ke Tengah-->
+	<article style="width:40%;float:left;margin:0 30%;">
+	<h1 style="text-align:center">Aplikasi Pendaftaran Online</h1>
+<form method="post" action="daftar.php">
+<!--Input Angka Dan Pemilihan Operasi-->
+Nama Lengkap	: <input type="text" size="36" name="nama" id="nama"/> <br>
+Alamat			: <textarea style="width:40px;height:230px cols="25"name="alamat" id="alamat"></textarea><br>
+No Telp 		: <input type="text" size="36" name="no_telp" id="telp"/> <br>
+Email			: <input type="text" size="36" name="email" id="email"/> <br>
+Tanggal Lahir	: <select name="tgl" id="tgl">
+				  <option value="0" selected>Tangal
+				  <option value="01" selected>01
+				  <option value="02" selected>02
+				  <option value="03" selected>03
+				  <option value="04" selected>04
+				  <option value="05" selected>05
+				  <option value="06" selected>06
+				  <option value="07" selected>07
+				  <option value="08" selected>08
+				  <option value="09" selected>09
+				  <option value="10" selected>10
+				  <option value="11" selected>11
+				  <option value="12" selected>12
+				  <option value="13" selected>13
+				  <option value="14" selected>14
+				  <option value="15" selected>15
+				  <option value="16" selected>16
+				  <option value="17" selected>17
+				  <option value="18" selected>18
+				  <option value="19" selected>19
+				  <option value="20" selected>20
+				  <option value="21" selected>21
+				  <option value="22" selected>22
+				  <option value="23" selected>23
+				  <option value="24" selected>24
+				  <option value="25" selected>25
+				  <option value="26" selected>26
+				  <option value="27" selected>27
+				  <option value="28" selected>28
+				  <option value="29" selected>29
+				  <option value="30" selected>30
+				  <option value="31" selected>31
+				  <option value="0" selected>Tangal
+				  </option>
+				  </select>
+				  </option>
+				  </select>
+				  <select name="bln" id="bln">
+				  <option value="0" selected>Bulan
+				  <option value="01" selected>Januari
+				  <option value="02" selected>Februari
+				  <option value="01" selected>Maret
+				  <option value="02" selected>April
+				  <option value="01" selected>Mei
+				  <option value="02" selected>Juni
+				  <option value="01" selected>Juli
+				  <option value="02" selected>Agustus
+				  <option value="01" selected>September
+				  <option value="02" selected>Oktober
+				  <option value="01" selected>November
+				  <option value="02" selected>Desember
+				  <option value="0" selected>Bulan
+				  </option>
+				  </select>
+				  <select name="thn" id="thn">
+				  <option value="0" selected>Tahun
+				  <option value="01" selected>2000
+				  <option value="02" selected>2001
+				  <option value="01" selected>2002
+				  <option value="02" selected>2003
+				  <option value="0" selected>2004
+				  <option value="01" selected>2005
+				  <option value="02" selected>2006
+				  <option value="01" selected>2007
+				  <option value="02" selected>2008
+				  <option value="0" selected>2009
+				  <option value="01" selected>2010
+				  <option value="02" selected>2011
+				  <option value="01" selected>2012
+				  <option value="02" selected>2013
+				  <option value="0" selected>2014
+				  <option value="01" selected>2015
+				  <option value="02" selected>2016
+				  <option value="01" selected>2017
+				  <option value="02" selected>2018
+				  <option value="0" selected>Tahun			  
+				  </option>
+				  </select><br>
+Jenis Kelamin	: <input type="radio" name="kelamin" value="Laki-Laki"/>Laki-Laki
+				  <input type="radio" name="kelamin" value="Perempuan"/>Perempuan<br>
+<!--ini proses-->
+<input type="submit" name="submit" value="Daftar"/> <?php
+echo "Nama Pembeli : $nama "//Proses Untuk Text Box
+echo "<br>";
+echo "Alamat Pembeli : ".$_POST['alamat']; //Proses Untuk Text Box
+echo "<br>";
+echo "No Telp Pembeli : ".$_POST['no_telp']; //Proses Untuk Text Box
+echo "<br>";
+echo "Email Pembeli : ".$_POST['email']; //Proses Untuk Text Box
+echo "<br>";	  
+echo "Tanggal Lahir Pembeli : ".$_POST['tgl']; //Proses Untuk Text Box
+echo " - ".$_POST['bln']; //Proses Untuk Text Box
+echo " - ".$_POST["thn"]; //Proses Untuk Text Box
+echo "<br>";	
+echo "Jenis Kelamin : ".$_POST['kelamin']; //Proses Untuk Text Box
+echo "<br>";  
+?>
+</form>
+</article>
+</main>
+</body>
+</html>
